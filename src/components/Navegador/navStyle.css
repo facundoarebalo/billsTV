@@ -17,10 +17,9 @@
 }
 
 .container-links {
-    display: flex;
-    justify-content: space-between;
-    transition: all 0.3s ease-in-out;
-  
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
 }
 
 .links {
@@ -45,3 +44,4 @@
   border-radius: 10px;
   color: black;
 }
+

@@ -9,8 +9,7 @@ function App() {
 
   return (
     <>
-    <Navegador/>
-      <h1>Bills TV APP</h1>
+      <Navegador/>
       <Rutas/>
       <Footer/>
     </>

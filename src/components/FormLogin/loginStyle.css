@@ -1,0 +1,35 @@
+.formularioLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+
+.formGroupEmail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+.formGroupPassword {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+
+.inputEmail:focus {
+    outline: none;
+    border-color: #646cff;
+    box-shadow: none;
+    border-radius: 8px;
+    border: 1px solid #646cff;
+    
+
+}

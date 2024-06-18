@@ -1,35 +1,43 @@
 import { Button, Form } from "react-bootstrap"
 import { useState } from "react"
+import './loginStyle.css'
 const Login = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
 
     const handleSubmit = (e) => {
-        console.log(email)
-        console.log(password)
+        console.log(email, "email")
+        console.log(password, "password")
         e.preventDefault()
-
     }
 
     return (
 
-
         <>
-            <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email"
+            <Form onSubmit={handleSubmit} className="formularioLogin">
+                <Form.Group className="mb-3 formGroupEmail" controlId="formBasicEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="email" placeholder="Ingresá tu email"
                         value={email}
-                        onChange={(e) => setEmail(e.target.value)} />
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        minLength={5}
+                        maxLength={25}
+                        className="inputEmail"
+                    />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
+                <Form.Group className="mb-3 formGroupPassword" controlId="formBasicPassword">
+                    <Form.Label>Contraseña</Form.Label>
                     <Form.Control
                         type="password"
-                        placeholder="Password"
+                        placeholder="Ingresá tu contraseña"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                        required
+                        minLength={5}
+                        maxLength={25}
+                        className="inputEmail"
                     />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">

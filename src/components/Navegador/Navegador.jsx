@@ -6,7 +6,6 @@ import logo from '../../assets/img/fondoCompleto.png'
 import './navStyle.css'
 import Login from "../FormLogin/Login";
 
-
 const Navegador = () => {
 
     const [show, setShow] = useState(false);
@@ -15,7 +14,7 @@ const Navegador = () => {
     const navigate = useNavigate()
     return (
         <>
-            <Navbar expand="lg" className="navBar">
+            <Navbar expand="lg" className="navBar sticky-top">
                 <Navbar.Brand className="logo text-white" onClick={() => navigate("/")}>
                     <img className="logo" src={logo} alt="logo-bills-tv" /> Bills TV
                 </Navbar.Brand>
@@ -33,7 +32,7 @@ const Navegador = () => {
                         <Form className="d-flex">
                             <Form.Control
                                 type="search"
-                                placeholder="Search"
+                                placeholder="Buscar películas, series.."
                                 className="me-2"
                                 aria-label="Search"
                             />
@@ -45,8 +44,7 @@ const Navegador = () => {
                             Login
                         </Button>
                         <Modal show={show} onHide={handleClose}>
-                          
-                            <Modal.Body><Login/></Modal.Body>
+                            <Modal.Body className="bg-dark"><Login /></Modal.Body>
                         </Modal>
                         <Nav.Link className="links text-center mx-md-3" onClick={() => navigate("/")}>Suscripciones</Nav.Link>
                     </Navbar.Collapse>
