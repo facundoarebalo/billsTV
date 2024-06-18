@@ -1,0 +1,47 @@
+.navBar {
+  background-color: black;
+  padding: 0.5em;
+  display: flex;
+}
+.logo {
+  cursor: pointer;
+  height: 4em;
+  border-radius: 20px;
+  align-items: start;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+.menuHamb {
+  color: white;
+  background-color: grey;
+}
+
+.container-links {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+  
+}
+
+.links {
+  color: white;
+  padding: 5px;
+}
+
+.links:hover {
+  color: white;
+  background-color: grey;
+  border-radius: 10px;
+}
+.btn-login {
+  background-color: gray;
+  color: black;
+  border-radius: 10px;
+  margin-left: 150px;
+}
+
+.btn-login:hover {
+  background-color: grey;
+  border-radius: 10px;
+  color: black;
+}
