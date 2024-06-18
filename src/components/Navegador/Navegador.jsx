@@ -1,16 +1,18 @@
-import { Navbar, Container, Nav, Form, Button } from "react-bootstrap"
+import { Navbar, Container, Nav, Form, Button, Modal } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
 import { CiSearch } from "react-icons/ci";
-
+import { useState } from "react";
 import logo from '../../assets/img/fondoCompleto.png'
 import './navStyle.css'
+import Login from "../FormLogin/Login";
 
 
 const Navegador = () => {
 
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     const navigate = useNavigate()
-
-
     return (
         <>
             <Navbar expand="lg" className="navBar">
@@ -39,9 +41,13 @@ const Navegador = () => {
                                 <CiSearch className="icon-search mb-1" />
                             </Button>
                         </Form>
-                        <Button className="btn-login mt-3 mt-md-0" variant="grey">
+                        <Button onClick={handleShow} className="btn-login mt-3 mt-md-0" variant="grey">
                             Login
                         </Button>
+                        <Modal show={show} onHide={handleClose}>
+                          
+                            <Modal.Body><Login/></Modal.Body>
+                        </Modal>
                         <Nav.Link className="links text-center mx-md-3" onClick={() => navigate("/")}>Suscripciones</Nav.Link>
                     </Navbar.Collapse>
                 </Container>
