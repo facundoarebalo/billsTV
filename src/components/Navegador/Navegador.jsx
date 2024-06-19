@@ -23,10 +23,10 @@ const Navegador = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Container className="container-links mb-2 mt-2">
-                                <Nav.Link className="links" onClick={() => navigate("/")}>Comedia</Nav.Link>
-                                <Nav.Link className="links" onClick={() => navigate("/")}>Ciencia Ficción</Nav.Link>
-                                <Nav.Link className="links" onClick={() => navigate("/")}>Acción</Nav.Link>
-                                <Nav.Link className="links" onClick={() => navigate("/")}>Terror</Nav.Link>
+                                <Nav.Link className="links text-white" onClick={() => navigate("*")}>Comedia</Nav.Link>
+                                <Nav.Link className="links text-white" onClick={() => navigate("*")}>Ciencia Ficción</Nav.Link>
+                                <Nav.Link className="links text-white" onClick={() => navigate("*")}>Acción</Nav.Link>
+                                <Nav.Link className="links text-white" onClick={() => navigate("*")}>Terror</Nav.Link>
                             </Container>
                         </Nav>
                         <Form className="d-flex">
@@ -46,7 +46,7 @@ const Navegador = () => {
                         <Modal show={show} onHide={handleClose}>
                             <Modal.Body className="bg-dark"><Login /></Modal.Body>
                         </Modal>
-                        <Nav.Link className="links text-center mx-md-3" onClick={() => navigate("/")}>Suscripciones</Nav.Link>
+                        <Nav.Link className="links text-center mx-md-3" onClick={() => navigate("/suscripcion")}>Suscripciones</Nav.Link>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

@@ -32,6 +32,11 @@
   background-color: grey;
   border-radius: 10px;
 }
+
+.links:active {
+  color: white;
+  background-color: grey;
+}
 .btn-login {
   background-color: gray;
   color: black;
@@ -44,4 +49,3 @@
   border-radius: 10px;
   color: black;
 }
-
