@@ -1,0 +1,22 @@
+.footer-container {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+.footer-border {
+    border-top: 1px solid white;
+    width: 100%;
+}
