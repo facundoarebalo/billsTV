@@ -40,7 +40,7 @@ const Navegador = () => {
                                 <CiSearch className="icon-search mb-1" />
                             </Button>
                         </Form>
-                        <Button onClick={handleShow} className="btn-login mt-3 mt-md-0" variant="grey">
+                        <Button onClick={handleShow} className="btn-login mt-3 mt-md-0 " variant="grey">
                             Login
                         </Button>
                         <Modal show={show} onHide={handleClose}>

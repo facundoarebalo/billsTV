@@ -13,7 +13,6 @@ const Login = () => {
     }
 
     return (
-
         <>
             <Form onSubmit={handleSubmit} className="formularioLogin">
                 <Form.Group className="mb-3 formGroupEmail" controlId="formBasicEmail">
