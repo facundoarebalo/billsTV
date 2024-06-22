@@ -4,6 +4,7 @@ import About from '../../views/About/About'
 import Contacto from '../../views/Contact/Contacto'
 import Sub from '../../views/Suscripcion/Sub'
 import Error404 from '../../views/404/Error404'
+import Registro from "../../views/Registro/Registro"
 
 const Rutas = () => {
   return (
@@ -13,6 +14,7 @@ const Rutas = () => {
     <Route path="/contact" element={<Contacto />} />
     <Route path="/suscripcion" element={<Sub />} />
     <Route path="*" element={<Error404 />} />
+    <Route path="/registro" element={<Registro/>} />
 </Routes>
   )
 }

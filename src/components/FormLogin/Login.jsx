@@ -1,9 +1,12 @@
 import { Button, Form } from "react-bootstrap"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import './loginStyle.css'
 const Login = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+
+    const navigate = useNavigate()
 
 
     const handleSubmit = (e) => {
@@ -42,7 +45,7 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Recordarme" />
                 </Form.Group>
-                <p>Aún no tenés cuenta? <a href="">Registrate</a> aquí!</p>
+                <p>Aún no tenés cuenta? <a className="link-registro" onClick={() => navigate("/registro")}>Registrate</a> aquí!</p>
                 <Button variant="primary" type="submit">
                     Iniciar sesión
                 </Button>

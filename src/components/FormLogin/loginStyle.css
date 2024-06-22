@@ -25,11 +25,14 @@
 }
 
 .inputEmail:focus {
-    outline: none;
-    border-color: #646cff;
-    box-shadow: none;
-    border-radius: 8px;
-    border: 1px solid #646cff;
-    
+  outline: none;
+  border-color: #646cff;
+  box-shadow: none;
+  border-radius: 8px;
+  border: 1px solid #646cff;
+}
 
+.link-registro {
+  cursor: pointer;
+  text-decoration: underline;
 }
