@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "2e49",
+      "username": "admin",
+      "email": "admin@admin",
+      "password": "admin",
+      "isAdmin": true
+    },
+    {
+      "id": "7c2d",
+      "username": "gPrekjg",
+      "email": "perezg@gmail",
+      "password": "1234567",
+      "isAdmin": false
+    },
+    {
+      "id": "2942",
+      "username": "juan2459",
+      "email": "juan@juan",
+      "password": "1234567",
+      "isAdmin": false
+    }
+  ]
+}

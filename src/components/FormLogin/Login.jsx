@@ -1,23 +1,44 @@
-import { Button, Form } from "react-bootstrap"
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { Button, Form } from "react-bootstrap";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 import './loginStyle.css'
+import Swal from "sweetalert2";
+
 const Login = () => {
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
-    const navigate = useNavigate()
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.get('http://localhost:8000/users');
+            const users = response.data;
+            const userFound = users.find((user) => user.email === email && user.password === password);
+            if (userFound) {
+                Swal.fire({
+                    title: "Bienvenido",
+                    text: "Has iniciado sesión correctamente",
+                    icon: "success",
+                });
+            }
+            else {
+                Swal.fire({
+                    title: "Error",
+                    text: "Email o contraseña incorrectos",
+                    icon: "error",
+                });
 
-
-    const handleSubmit = (e) => {
-        console.log(email, "email")
-        console.log(password, "password")
-        e.preventDefault()
-    }
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    };
 
     return (
         <>
-            <Form onSubmit={handleSubmit} className="formularioLogin">
+            <Form onSubmit={handleLogin} className="formularioLogin">
                 <Form.Group className="mb-3 formGroupEmail" controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
                     <Form.Control type="email" placeholder="Ingresá tu email"
@@ -51,7 +72,7 @@ const Login = () => {
                 </Button>
             </Form>
         </>
-    )
-}
+    );
+};
 
-export default Login
+export default Login;

@@ -11,6 +11,7 @@ const Navegador = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
     const navigate = useNavigate()
     return (
         <>
@@ -43,7 +44,9 @@ const Navegador = () => {
                         <Button onClick={handleShow} className="btn-login mt-3 mt-md-0 " variant="grey">
                             Login
                         </Button>
+
                         <Modal show={show} onHide={handleClose}>
+
                             <Modal.Body className="bg-dark"><Login /></Modal.Body>
                         </Modal>
                         <Nav.Link className="links text-center mx-md-3" onClick={() => navigate("/suscripcion")}>Suscripciones</Nav.Link>

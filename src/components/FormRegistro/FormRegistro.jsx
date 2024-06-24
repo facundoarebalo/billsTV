@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import './formRegStyle.css'
 import Swal from 'sweetalert2'
+import axios from 'axios'
 
 
 const FormRegistro = () => {
@@ -10,11 +11,7 @@ const FormRegistro = () => {
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
 
-    const handleSubmit = (e) => {
-        console.log(username, "username")
-        console.log(email, "email")
-        console.log(password, "password")
-        console.log(confirmPassword, "confirmPassword")
+    const handleSubmit = async (e) => {
         e.preventDefault()
         if (password !== confirmPassword) {
             Swal.fire({
@@ -36,10 +33,17 @@ const FormRegistro = () => {
             username: username,
             email: email,
             password: password,
-            confirmPassword: confirmPassword
+            isAdmin: false
         }
-        localStorage.setItem('userData', 'data')
-        console.log(userData)
+
+        try {
+            const response = await axios.post('http://localhost:8000/users', userData)
+            console.log('usuario guardado', response.data)
+
+        } catch (error) {
+            console.error('Error al guardar el usuario:', error);
+
+        }
     }
 
 
