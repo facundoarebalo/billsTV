@@ -18,10 +18,11 @@ const Login = () => {
             const userFound = users.find((user) => user.email === email && user.password === password);
             if (userFound) {
                 Swal.fire({
-                    title: "Bienvenido",
+                    title: `Bienvenido ${userFound.username}`,
                     text: "Has iniciado sesión correctamente",
                     icon: "success",
                 });
+                navigate("/");
             }
             else {
                 Swal.fire({

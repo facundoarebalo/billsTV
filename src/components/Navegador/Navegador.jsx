@@ -12,6 +12,8 @@ const Navegador = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+
+
     const navigate = useNavigate()
     return (
         <>
@@ -41,6 +43,8 @@ const Navegador = () => {
                                 <CiSearch className="icon-search mb-1" />
                             </Button>
                         </Form>
+
+
                         <Button onClick={handleShow} className="btn-login mt-3 mt-md-0 " variant="grey">
                             Login
                         </Button>
