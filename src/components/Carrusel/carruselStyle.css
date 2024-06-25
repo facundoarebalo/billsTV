@@ -2,25 +2,21 @@
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  width: 100%; 
+  width: 100%;
 }
 
 .carousel-slide {
-  width: calc(
-    100% / 3
-  ); 
+  width: calc(100% / 3);
   margin-right: 10px;
 }
 
 .carousel-slide img {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
 .carousel-slide.zoom-effect {
-  transform: scale(
-    1.05
-  ); 
+  transform: scale(1.05);
 }
 
 .tituloPeliculas {

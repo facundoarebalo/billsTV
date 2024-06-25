@@ -20,6 +20,13 @@
       "email": "juan@juan",
       "password": "1234567",
       "isAdmin": false
+    },
+    {
+      "id": "6302",
+      "username": "diegomaradona",
+      "email": "diego10@10",
+      "password": "diego",
+      "isAdmin": false
     }
   ]
 }
