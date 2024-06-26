@@ -19,7 +19,7 @@ const Navegador = () => {
         <>
             <Navbar expand="lg" className="navBar sticky-top">
                 <Navbar.Brand className="logo text-white" onClick={() => navigate("/")}>
-                    <img className="logo" src={logo} alt="logo-bills-tv" /> Bills TV
+                    <img className="logo" src={logo} alt="logo-bills-tv" />
                 </Navbar.Brand>
                 <Navbar.Toggle className="menuHamb" aria-controls="basic-navbar-nav" />
                 <Container className="containerNav">

@@ -34,6 +34,7 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
+            <p className='text-center copy-parrafo'>Copyright 2024 - Todos los derechos reservados <i class="fas fa-copy    ">Bills TV</i></p>
         </footer>
     )
 }
