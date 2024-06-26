@@ -25,11 +25,11 @@ const Footer = () => {
                 <Row>
                     <h2 className='text-center'>Social</h2>
                     <Col className='social-icons'>
-                        <a href=''><FaFacebookF />
+                        <a href='https://www.facebook.com' target='_blank'><FaFacebookF />
                         </a>
-                        <a href=''><FaXTwitter />
+                        <a href='https://www.x.com' target='_blank'><FaXTwitter />
                         </a>
-                        <a href=''><IoLogoInstagram />
+                        <a href='https://www.instagram.com' target='_blank'><IoLogoInstagram />
                         </a>
                     </Col>
                 </Row>
