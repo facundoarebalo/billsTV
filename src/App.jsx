@@ -5,15 +5,12 @@ import Navegador from './components/Navegador/Navegador'
 import Footer from './components/Footer/Footer'
 
 function App() {
- 
-
   return (
     <>
-      <Navegador/>
-      <Rutas/>
-      <Footer/>
+      <Navegador />
+      <Rutas />
+      <Footer />
     </>
   )
 }
-
 export default App

@@ -16,10 +16,9 @@ const Footer = () => {
                 <Row>
                     <Col className='help-column'>
                         <h2>Ayuda</h2>
-                        <a onClick={() => navigate("/about")}>About</a>
+                        <a className='about-link' onClick={() => navigate("/about")}>About</a>
                         <p className='mt-3'>Preguntas frecuentes</p>
                         <p>Términos y condiciones</p>
-                        <a href="">Contacto</a>
                     </Col>
                 </Row>
                 <Row>
@@ -34,7 +33,7 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-            <p className='text-center copy-parrafo'>Copyright 2024 - Todos los derechos reservados <i class="fas fa-copy    ">Bills TV</i></p>
+            <p className='text-center copy-parrafo'>Copyright 2024 - Todos los derechos reservados <i class="fas fa-copy">Bills TV</i></p>
         </footer>
     )
 }
