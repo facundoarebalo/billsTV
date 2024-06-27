@@ -1,8 +1,14 @@
-# React + Vite
+# Bills TV
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bills TV es una plataforma de streaming de series y películas. Este proyecto representa la parte del frontend, desarrollada utilizando React y JavaScript.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Streaming de series y películas**: Explora y visualiza una variedad de series y películas.
+- **Gestión de usuarios**: Permite la creación de usuarios utilizando una API falsa.
+
+## Tecnologías Utilizadas
+
+- **React**: Utilizado para construir la interfaz de usuario.
+- **JavaScript**: Lenguaje de programación utilizado.
+- **JSON**: Utilizado para simular una API que maneja los datos de los usuarios.
